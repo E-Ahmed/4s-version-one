@@ -24,9 +24,14 @@
 
 	<!-- Font Awesome Icon -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" media="all" href="font/font-awesome/css/font-awesome.min.css">
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<!-- Main style sheet -->
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<!-- responsive style sheet -->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -70,11 +75,10 @@
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
-					<li><a href="#portfolio">Products</a></li>
+					<li><a href="#product">Products</a></li>
 					<li><a href="#service">Services</a></li>
-					<li><a href="#pricing">Prices</a></li>
 					<li><a href="#client">Clients</a></li>
-					<li><a href="#team">Team</a></li>
+					<!--<li><a href="#team">Team</a></li>-->
 					<li class="has-dropdown"><a href="#blog">Blog</a>
 						<ul class="dropdown">
 							<li><a href="blog-single.html">blog post</a></li>
@@ -137,9 +141,10 @@
 				<div class="col-md-4">
 					<div class="about">
 						<i class="fa fa-cogs"></i>
-						<h3>Fully Customizible</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-						<a href="blog-single.html" target="_blank">Read more</a>
+						<h3>Established</h3>
+						<p>4S Technology was established in 1994 as a part of Nahil Computer Co., our holding company.
+							</p>
+
 					</div>
 				</div>
 				<!-- /about -->
@@ -150,7 +155,7 @@
 						<i class="fa fa-magic"></i>
 						<h3>Awesome Features</h3>
 						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-						<a href="blog-single.html" target="_blank">Read more</a>
+
 					</div>
 				</div>
 				<!-- /about -->
@@ -161,7 +166,7 @@
 						<i class="fa fa-mobile"></i>
 						<h3>Fully Responsive</h3>
 						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-						<a href="blog-single.html" target="_blank">Read more</a>
+
 					</div>
 				</div>
 				<!-- /about -->
@@ -177,7 +182,7 @@
 
 
 	<!-- Products -->
-	<div id="portfolio" class="section md-padding bg-grey">
+	<div id="product" class="section md-padding bg-grey">
 
 		<!-- Container -->
 		<div class="container">
@@ -191,140 +196,132 @@
 				</div>
 				<!-- /Section header -->
 
-				<!-- Work -->
-				<div class="col-md-4 col-xs-6 work">
-					<img class="img-responsive" src="./img/work1.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<span>Category</span>
-						<h3>Enter Resource Planning(ERP)</h3>
-						<div class="work-link">
-							<a href="blog-single.html" target="_blank"><i class="fa fa-external-link"></i></a>
-							<a class="lightbox" href="./img/work1.jpg"><i class="fa fa-search"></i></a>
-						</div>
-					</div>
-				</div>
-				<!-- /Work -->
+				<!-- Single Service -->
+							<div class="col l4 m6 s12 service-wrapper wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.3s" data-wow-offset="0">
+								<div class="col s12 w-block shadow-bg">
+									<div class="service-center">
+										<div class="service-icon">
+											<span class="fa fa-laptop"></span>
+										</div>
+										<div class="service-title">
+											Front End Development
+										</div>
+									</div>
+									<div class="service-desc">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+											incididunt ut labore et dolore magna aliqua.
+										</p>
+									</div>
+								</div>
+							</div>
+							<!--/ Single Service -->
 
-				<!-- Work -->
-				<div class="col-md-4 col-xs-6 work">
-					<img class="img-responsive" src="./img/work2.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<span>Category</span>
-						<h3>CRM Applications</h3>
-						<div class="work-link">
-							<a href="blog-single.html" target="_blank"><i class="fa fa-external-link"></i></a>
-							<a class="lightbox" href="./img/work2.jpg"><i class="fa fa-search"></i></a>
-						</div>
-					</div>
-				</div>
-				<!-- /Work -->
+							<!-- Single Service -->
+							<div class="col l4 m6 s12 service-wrapper wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.3s" data-wow-offset="0">
+								<div class="col s12 w-block shadow-bg">
+									<div class="service-center">
+										<div class="service-icon">
+											<span class="fa fa-desktop"></span>
+										</div>
+										<div class="service-title">
+											Back End Development
+										</div>
+									</div>
+									<div class="service-desc">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+											incididunt ut labore et dolore magna aliqua.
+										</p>
+									</div>
+								</div>
+							</div>
+							<!--/ Single Service -->
 
-				<!-- Work -->
-				<div class="col-md-4 col-xs-6 work">
-					<img class="img-responsive" src="./img/work3.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<span>Category</span>
-						<h3>Real Estate Management Systems</h3>
-						<div class="work-link">
-							<a href="blog-single.html" target="_blank"><i class="fa fa-external-link"></i></a>
-							<a class="lightbox" href="./img/work3.jpg"><i class="fa fa-search"></i></a>
-						</div>
-					</div>
-				</div>
-				<!-- /Work -->
+							<!-- Single Service -->
+							<div class="col l4 m6 s12 service-wrapper wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.3s" data-wow-offset="0">
+								<div class="col s12 w-block shadow-bg">
+									<div class="service-center">
+										<div class="service-icon">
+											<span class="fa fa-mobile"></span>
+										</div>
+										<div class="service-title">
+											Mobile Development
+										</div>
+									</div>
+									<div class="service-desc">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+											incididunt ut labore et dolore magna aliqua.
+										</p>
+									</div>
+								</div>
+							</div>
+							<!--/ Single Service -->
 
-				<!-- Work -->
-				<div class="col-md-4 col-xs-6 work">
-					<img class="img-responsive" src="./img/work4.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<span>Category</span>
-						<h3>Workflow Management Systems</h3>
-						<div class="work-link">
-							<a href="blog-single.html" target="_blank"><i class="fa fa-external-link"></i></a>
-							<a class="lightbox" href="./img/work4.jpg"><i class="fa fa-search"></i></a>
-						</div>
-					</div>
-				</div>
-				<!-- /Work -->
+							<!-- Single Service -->
+							<div class="col l4 m6 s12 service-wrapper wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.3s" data-wow-offset="0">
+								<div class="col s12 w-block shadow-bg">
+									<div class="service-center">
+										<div class="service-icon">
+											<span class="fa fa-server"></span>
+										</div>
+										<div class="service-title">
+											Web Hosting
+										</div>
+									</div>
+									<div class="service-desc">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+											incididunt ut labore et dolore magna aliqua.
+										</p>
+									</div>
+								</div>
+							</div>
+							<!--/ Single Service -->
 
-				<!-- Work -->
-				<div class="col-md-4 col-xs-6 work">
-					<img class="img-responsive" src="./img/work5.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<span>Category</span>
-						<h3>Archiving Management Systems</h3>
-						<div class="work-link">
-							<a href="blog-single.html" target="_blank"><i class="fa fa-external-link"></i></a>
-							<a class="lightbox" href="./img/work5.jpg"><i class="fa fa-search"></i></a>
-						</div>
-					</div>
-				</div>
-				<!-- /Work -->
+							<!-- Single Service -->
+							<div class="col l4 m6 s12 service-wrapper wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.3s" data-wow-offset="0">
+								<div class="col s12 w-block shadow-bg">
+									<div class="service-center">
+										<div class="service-icon">
+											<span class="fa fa-shopping-cart"></span>
+										</div>
+										<div class="service-title">
+											E-Commerce Solutions
+										</div>
+									</div>
+									<div class="service-desc">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+											incididunt ut labore et dolore magna aliqua.
+										</p>
+									</div>
+								</div>
+							</div>
+							<!--/ Single Service -->
 
-				<!-- Work -->
-				<div class="col-md-4 col-xs-6 work">
-					<img class="img-responsive" src="./img/work6.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<span>Category</span>
-						<h3>Fleet Management Systems</h3>
-						<div class="work-link">
-							<a href="blog-single.html" target="_blank"><i class="fa fa-external-link"></i></a>
-							<a class="lightbox" href="./img/work6.jpg"><i class="fa fa-search"></i></a>
-						</div>
-					</div>
-				</div>
-				<!-- /Work -->
+							<!-- Single Service -->
+							<div class="col l4 m6 s12 service-wrapper wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.3s" data-wow-offset="0">
+								<div class="col s12 w-block shadow-bg">
+									<div class="service-center">
+										<div class="service-icon">
+											<span class="fa fa-support"></span>
+										</div>
+										<div class="service-title">
+											Consulting
+										</div>
+									</div>
+									<div class="service-desc">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+											incididunt ut labore et dolore magna aliqua.
+										</p>
+									</div>
+								</div>
+							</div>
+							<!--/ Single Service -->
 
-				<!-- Work -->
-				<div class="col-md-4 col-xs-6 work">
-					<img class="img-responsive" src="./img/work6.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<span>Category</span>
-						<h3>Maintenance Management Systems</h3>
-						<div class="work-link">
-							<a href="blog-single.html" target="_blank"><i class="fa fa-external-link"></i></a>
-							<a class="lightbox" href="./img/work6.jpg"><i class="fa fa-search"></i></a>
-						</div>
-					</div>
-				</div>
-				<!-- /Work -->
-
-				<!-- Work -->
-				<div class="col-md-4 col-xs-6 work">
-					<img class="img-responsive" src="./img/work6.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<span>Category</span>
-						<h3>Mobile Aplication</h3>
-						<div class="work-link">
-							<a href="blog-single.html" target="_blank"><i class="fa fa-external-link"></i></a>
-							<a class="lightbox" href="./img/work6.jpg"><i class="fa fa-search"></i></a>
-						</div>
-					</div>
-				</div>
-				<!-- /Work -->
-
-				<!-- Work -->
-				<div class="col-md-4 col-xs-6 work">
-					<img class="img-responsive" src="./img/work6.jpg" alt="">
-					<div class="overlay"></div>
-					<div class="work-content">
-						<span>Category</span>
-						<h3>ODOO</h3>
-						<div class="work-link">
-							<a href="blog-single.html" target="_blank"><i class="fa fa-external-link"></i></a>
-							<a class="lightbox" href="./img/work6.jpg"><i class="fa fa-search"></i></a>
-						</div>
-					</div>
-				</div>
-				<!-- /Work -->
 
 			</div>
 			<!-- /Row -->
@@ -354,8 +351,8 @@
 				<!-- service -->
 				<div class="col-md-4 col-sm-6">
 					<div class="service">
-						<i class="fa fa-diamond"></i>
-						<h3>App Development</h3>
+						<i class="fa fa-connectdevelop"></i>
+						<h3>Software Solutions</h3>
 						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
 					</div>
 				</div>
@@ -364,9 +361,9 @@
 				<!-- service -->
 				<div class="col-md-4 col-sm-6">
 					<div class="service">
-						<i class="fa fa-rocket"></i>
-						<h3>Graphic Design</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+						<i class="fa fa-database"></i>
+						<h3>Data Security Solutions</h3>
+						<p>TO BE FILLED FROM THE SECURITY BUSINESS LINE MANAGER .</p>
 					</div>
 				</div>
 				<!-- /service -->
@@ -375,7 +372,7 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="service">
 						<i class="fa fa-cogs"></i>
-						<h3>Creative Idea</h3>
+						<h3>Outsourcing Services </h3>
 						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
 					</div>
 				</div>
@@ -435,7 +432,9 @@
 					<div class="section-header">
 						<h2 class="title">Why Choose Us</h2>
 					</div>
-					<p>Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris. Ultrices sagittis orci a scelerisque purus.</p>
+					<p>Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat.
+						Aliquam id diam maecenas ultricies mi eget mauris. Ultrices sagittis orci a scelerisque
+						 purus.</p>
 					<div class="feature">
 						<i class="fa fa-check"></i>
 						<p>Quis varius quam quisque id diam vel quam elementum.</p>
@@ -494,42 +493,32 @@
 				<!-- number -->
 				<div class="col-sm-3 col-xs-6">
 					<div class="number">
+						<i class="fa fa-address-card"></i>
+						<h3 class="timer white-text count-number" data-to="100" data-speed="4000"><span class="counter"></span></h3>
+						<span class="white-text">Our Customer</span>
+					</div>
+				</div>
+				<!-- /number -->
+
+   	<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="number">
 						<i class="fa fa-users"></i>
-						<h3 class="white-text"><span class="counter">451</span></h3>
+						<h3 class="timer white-text count-number" data-to="1700" data-speed="4000"><span class="counter"></span></h3>
 						<span class="white-text">Happy clients</span>
 					</div>
 				</div>
 				<!-- /number -->
 
 				<!-- number -->
-				<div class="col-sm-3 col-xs-6">
-					<div class="number">
-						<i class="fa fa-trophy"></i>
-						<h3 class="white-text"><span class="counter">12</span></h3>
-						<span class="white-text">Awards won</span>
+					<div class="col-sm-3 col-xs-6">
+						<div class="number">
+							<i class="fa fa-file"></i>
+							<h3 class="timer white-text count-number" data-to="11900" data-speed="4000"><span class="counter"></span></h3>
+							<span class="white-text">Projects completed</span>
+						</div>
 					</div>
-				</div>
-				<!-- /number -->
-
-				<!-- number -->
-				<div class="col-sm-3 col-xs-6">
-					<div class="number">
-						<i class="fa fa-coffee"></i>
-						<h3 class="white-text"><span class="counter">154</span>K</h3>
-						<span class="white-text">Cups of Coffee</span>
-					</div>
-				</div>
-				<!-- /number -->
-
-				<!-- number -->
-				<div class="col-sm-3 col-xs-6">
-					<div class="number">
-						<i class="fa fa-file"></i>
-						<h3 class="white-text"><span class="counter">45</span></h3>
-						<span class="white-text">Projects completed</span>
-					</div>
-				</div>
-				<!-- /number -->
+					<!-- /number -->
 
 			</div>
 			<!-- /Row -->
@@ -540,115 +529,11 @@
 	</div>
 	<!-- /Numbers -->
 
-	<!-- Pricing -->
-	<div id="pricing" class="section md-padding">
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<!-- Section header -->
-				<div class="section-header text-center">
-					<h2 class="title">Pricing Table</h2>
-				</div>
-				<!-- /Section header -->
-
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">Basic plan</span>
-							<div class="price">
-								<h3>$9<span class="duration">/ month</span></h3>
-							</div>
-						</div>
-						<ul class="price-content">
-							<li>
-								<p>1GB Disk Space</p>
-							</li>
-							<li>
-								<p>100 Email Account</p>
-							</li>
-							<li>
-								<p>24/24 Support</p>
-							</li>
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">Purchase now</button>
-						</div>
-					</div>
-				</div>
-				<!-- /pricing -->
-
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">Silver plan</span>
-							<div class="price">
-								<h3>$19<span class="duration">/ month</span></h3>
-							</div>
-						</div>
-						<ul class="price-content">
-							<li>
-								<p>1GB Disk Space</p>
-							</li>
-							<li>
-								<p>100 Email Account</p>
-							</li>
-							<li>
-								<p>24/24 Support</p>
-							</li>
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">Purchase now</button>
-						</div>
-					</div>
-				</div>
-				<!-- /pricing -->
-
-				<!-- pricing -->
-				<div class="col-sm-4">
-					<div class="pricing">
-						<div class="price-head">
-							<span class="price-title">Gold plan</span>
-							<div class="price">
-								<h3>$39<span class="duration">/ month</span></h3>
-							</div>
-						</div>
-						<ul class="price-content">
-							<li>
-								<p>1GB Disk Space</p>
-							</li>
-							<li>
-								<p>100 Email Account</p>
-							</li>
-							<li>
-								<p>24/24 Support</p>
-							</li>
-						</ul>
-						<div class="price-btn">
-							<button class="outline-btn">Purchase now</button>
-						</div>
-					</div>
-				</div>
-				<!-- /pricing -->
-
-			</div>
-			<!-- Row -->
-
-		</div>
-		<!-- /Container -->
-
-	</div>
-	<!-- /Pricing -->
-
+	<br><br><br><br><br>
 
 	<!-- Section header -->
 	<div class="section-header text-center">
-		<h2 class="title">Clients</h2>
+		<h2 class="title">Some Of Our Clients</h2>
 	</div>
 	<!-- /Section header -->
 
@@ -680,7 +565,7 @@
 								<h3 class="white-text">Lehaa</h3>
 								<span>Agricultural and Transportation</span>
 							</div>
-							<p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
+							<p class="white-text"></p>
 						</div>
 						<!-- /testimonial -->
 
@@ -691,7 +576,7 @@
 								<h3 class="white-text">Rakhaa</h3>
 								<span>Construction and reconstruction</span>
 							</div>
-							<p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
+							<p class="white-text"></p>
 						</div>
 						<!-- /testimonial -->
 
@@ -702,7 +587,7 @@
 								<h3 class="white-text">Binladin Group</h3>
 								<span>Contracting Company</span>
 							</div>
-							<p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
+							<p class="white-text"></p>
 						</div>
 						<!-- /testimonial -->
 
@@ -713,7 +598,7 @@
 								<h3 class="white-text">El-Dawlia</h3>
 								<span>Trading And Transportation</span>
 							</div>
-							<p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
+							<p class="white-text"></p>
 						</div>
 						<!-- /testimonial -->
 
@@ -724,7 +609,7 @@
 								<h3 class="white-text">El-Rawda</h3>
 								<span>Contracting Company</span>
 							</div>
-							<p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
+							<p class="white-text"></p>
 						</div>
 						<!-- /testimonial -->
 
@@ -735,7 +620,7 @@
 								<h3 class="white-text">Pro Design</h3>
 								<span>Contracting Company</span>
 							</div>
-							<p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
+							<p class="white-text"></p>
 						</div>
 						<!-- /testimonial -->
 
@@ -763,22 +648,21 @@
 	</div>
 	<!-- /Testimonial -->
 
-	<!-- Team -->
+	<!--team comment
+
 	<div id="team" class="section md-padding">
 
-		<!-- Container -->
+
 		<div class="container">
 
-			<!-- Row -->
+
 			<div class="row">
 
-				<!-- Section header -->
+
 				<div class="section-header text-center">
 					<h2 class="title">Our Team</h2>
 				</div>
-				<!-- /Section header -->
 
-				<!-- team -->
 				<div class="col-sm-4">
 					<div class="team">
 						<div class="team-img">
@@ -797,9 +681,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- /team -->
 
-				<!-- team -->
 				<div class="col-sm-4">
 					<div class="team">
 						<div class="team-img">
@@ -818,9 +700,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- /team -->
 
-				<!-- team -->
 				<div class="col-sm-4">
 					<div class="team">
 						<div class="team-img">
@@ -839,16 +719,17 @@
 						</div>
 					</div>
 				</div>
-				<!-- /team -->
+
 
 			</div>
-			<!-- /Row -->
+
 
 		</div>
-		<!-- /Container -->
+
 
 	</div>
-	<!-- /Team -->
+
+-->
 
 	<!-- Blog -->
 	<div id="blog" class="section md-padding bg-grey">
@@ -934,71 +815,106 @@
 	</div>
 	<!-- /Blog -->
 
-	<!-- Contact -->
-	<div id="contact" class="section md-padding">
-
-		<!-- Container -->
+	<!--
+	=====================================================
+		Contact Section
+	=====================================================
+	-->
+	<div id="contact">
 		<div class="container">
+			<div class="clear-fix contact-address-content">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="left-side">
+						<h2>Contact Info</h2>
+						<p> <br><br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+						 sed do eiusmod tempor ididunt ut labore et dolore magna aliqua.</p>
 
-			<!-- Row -->
-			<div class="row">
+						<ul>
+							<li>
+								<div class="icon tran3s round-border p-color-bg"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+								<h6>Address</h6>
+								<p>33 Demashk street, Mohandseen, Giza, Egypt</p>
+							</li>
+							<li>
+								<div class="icon tran3s round-border p-color-bg"><i class="fa fa-phone" aria-hidden="true"></i></div>
+								<h6>Phone</h6>
+								<p>+202 3760 1777</p>
+							</li>
+							<li>
+								<div class="icon tran3s round-border p-color-bg"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+								<h6>Email</h6>
+								<p>info@4s-systems.com</p>
+							</li>
+						</ul>
+					</div> <!-- /.left-side -->
+				</div> <!-- /.col- -->
 
-				<!-- Section-header -->
-				<div class="section-header text-center">
-					<h2 class="title">Get in touch</h2>
-				</div>
-				<!-- /Section-header -->
 
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<i class="fa fa-phone"></i>
-						<h3>Phone</h3>
-						<p>512-421-3940</p>
-					</div>
-				</div>
-				<!-- /contact -->
+				<main class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="map-area">
+						<h2>Our Location</h2>
+						<div id="map"></div>
+					</div> <!-- /.map-area -->
+				</main> <!-- /.col- -->
+			</div> <!-- /.contact-address-content -->
 
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<i class="fa fa-envelope"></i>
-						<h3>Email</h3>
-						<p>email@support.com</p>
-					</div>
-				</div>
-				<!-- /contact -->
 
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<i class="fa fa-map-marker"></i>
-						<h3>Address</h3>
-						<p>1739 Bubby Drive</p>
-					</div>
-				</div>
-				<!-- /contact -->
 
-				<!-- contact form -->
-				<div class="col-md-8 col-md-offset-2">
-					<form class="contact-form">
-						<input type="text" class="input" placeholder="Name">
-						<input type="email" class="input" placeholder="Email">
-						<input type="text" class="input" placeholder="Subject">
-						<textarea class="input" placeholder="Message"></textarea>
-						<button class="main-btn">Send message</button>
-					</form>
-				</div>
-				<!-- /contact form -->
+			<!-- Contact Form -->
+			<div class="send-message">
+				<h2>Send Message</h2>
 
-			</div>
-			<!-- /Row -->
+				<form action="inc/sendemail.php" class="form-validation" autocomplete="off" method="post">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+							<div class="single-input">
+								<input type="text" placeholder="First Name*" name="Fname">
+							</div> <!-- /.single-input -->
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+							<div class="single-input">
+								<input type="text" placeholder="Last Name*" name="Lname">
+							</div> <!-- /.single-input -->
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<div class="single-input">
+								<input type="email" placeholder="Your Email*" name="email">
+							</div> <!-- /.single-input -->
+						</div>
+					</div> <!-- /.row -->
+					<div class="single-input">
+						<input type="text" placeholder="Subject" name="sub">
+					</div> <!-- /.single-input -->
+					<textarea placeholder="Write Message" name="message"></textarea>
 
-		</div>
-		<!-- /Container -->
 
-	</div>
-	<!-- /Contact -->
+					<button class="tran3s p-color-bg">Send Message</button>
+				</form>
+
+
+				<!-- Contact Form Validation Markup -->
+				<!-- Contact alert -->
+				<div class="alert-wrapper" id="alert-success">
+					<div id="success">
+						<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
+						<div class="wrapper">
+											<p>Your message was sent successfully.</p>
+									 </div>
+							</div>
+					</div> <!-- End of .alert_wrapper -->
+					<div class="alert-wrapper" id="alert-error">
+							<div id="error">
+									<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
+									<div class="wrapper">
+											<p>Sorry!Something Went Wrong.</p>
+									</div>
+							</div>
+					</div> <!-- End of .alert_wrapper -->
+			</div> <!-- /.send-message -->
+		</div> <!-- /.container -->
+	</div> <!-- /#contact -->
+	<br><br><br>
 
 
 	<!-- Footer -->
@@ -1021,15 +937,17 @@
 					<!-- footer follow -->
 					<ul class="footer-follow">
 						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
 						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 
 					</ul>
 					<!-- /footer follow -->
 
 					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p><a href="file:///E:/4s%20website/4s-technology-website/index.html" target="_blank">4S Thechnology</a></p>
+						<p>Copyright @2018 All rights reserved | This template is made with by <a href="file:///E:/4s%20website/4s-technology-website/index.html#" target="_blank">4S Thechnology</a></p>
 					</div>
 					<!-- /footer copyright -->
 
@@ -1062,9 +980,19 @@
 	<!-- jQuery Plugins -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/lib/knockout-3.2.0.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+
+
+	<!-- Google map js -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyBLmtEvrX8Cku34lrOlTuzceoNSteFM1cw&v=3&callback=initMap" onerror="mapError()" type="text/javascript"></script>
+	<script src="vendor/gmaps.min.js"></script>
+  <script type="text/javascript" src="js/map-script.js"></script>
+	<script src="js/lib/knockout-3.2.0.js"></script>
+
 
 </body>
 

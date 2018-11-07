@@ -23,7 +23,7 @@ Table OF Contents
 8 >  Why choose us
 9 >  Numbers
 10 > Pricing
-11 > Testimonial
+11 > client
 12 > Team
 13 > Blog
 14 > Blog post
@@ -262,11 +262,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .navbar-brand {
     padding: 0;
+
 }
 
 .navbar-brand .logo, .navbar-brand .logo-alt {
     max-height: 50px;
-    display: block;
+    border-radius: 40%
 }
 
 #nav:not(.nav-transparent):not(.fixed-nav) .navbar-brand .logo-alt {
@@ -668,88 +669,122 @@ header {
 /*------------------------------------*\
 	product
 \*------------------------------------*/
-.service-wrapper{
-	margin-top: 30px;
-	position: relative;
-	text-align: center;
+
+.work {
+    position: relative;
+    padding: 20px;
+    width: 25%;
+    height: 7.5cm
+
+
 }
 
-.service-wrapper .w-block{
-	padding: 40px;
+.work>img {
+  width: 100%;
+
 }
 
-.service-center{
-	padding: 0 40px;
-	position: absolute;
-	width: 33.33333%;
-	top: 50%;
-	left: 50%;
-	opacity: 1;
-	visibility: visible;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
+.work .overlay {
+    height: 100%;
+    width: 100%;
+    background: #1C1D21;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
 }
 
-.service-wrapper:hover .service-center{
-	opacity: 0;
-	visibility: hidden;
+.work:hover .overlay {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    opacity: 0.8;
 }
 
-.service-icon{
-	font-size: 28px;
-	padding-bottom: 15px;
+.work .work-content {
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    top: 50%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
-.service-title{
-	font-family: 'Dosis', 'Open Sans', 'Sans Serif' !important;
-	font-size: 18px;
-	font-weight: 600;
-	letter-spacing: 3px;
-	text-transform: uppercase;
-	line-height: 1.5;
+.work .work-content h3 {
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    opacity: 0;
+    color: #FFF;
+    margin-bottom: 10px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
 }
 
-.service-title::after{
-	display: block;
-	content: '';
-	margin: 18px auto 0;
-	width: 50px;
-	height: 3px;
-	background: red;
-	border-radius: 30px;
+.work:hover .work-content h3 {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
 }
 
-.service-desc{
-	opacity: 0;
-	visibility: hidden;
-	-webkit-transform: scale(0.5);
-	-moz-transform: scale(0.5);
-	-ms-transform: scale(0.5);
-	-o-transform: scale(0.5);
-	transform: scale(0.5);
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
+.work .work-content span {
+    display: block;
+    text-transform: uppercase;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    opacity: 0;
+    color: #6195FF;
+    margin-bottom: 5px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
 }
 
-.service-wrapper:hover .service-desc{
-	opacity: 1;
-	visibility: visible;
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-ms-transform: scale(1);
-	-o-transform: scale(1);
-	transform: scale(1);
+.work:hover .work-content span {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.work .work-link {
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+
+.work .work-link a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #6195FF;
+    color: #FFF;
+    line-height: 50px;
+    text-align: center;
+}
+
+.work:hover .work-link {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    opacity: 1;
 }
 
 
@@ -819,7 +854,7 @@ header {
 	Numbers
 \*------------------------------------*/
 .col-sm-3 {
-  width: 33.3333%;
+  width: 50%;
 }
 
 .number {
@@ -840,7 +875,7 @@ header {
 
 
 /*------------------------------------*\
-	Testimonial
+	client
 \*------------------------------------*/
 
 .testimonial {
@@ -848,7 +883,7 @@ header {
 }
 
 .testimonial-meta {
-    position: relative;
+
     padding-left: 90px;
     height: 70px;
     margin-bottom: 20px;
@@ -859,9 +894,9 @@ header {
     position: absolute;
     left: 0;
     top: 0;
-    width: 70px !important;
-    height: 70px !important;
-    border-radius: 50%;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 30%;
 }
 
 .testimonial h3 {
@@ -874,110 +909,6 @@ header {
     text-transform: uppercase;
 }
 
-
-/*------------------------------------*\
-	Team
-\*------------------------------------*/
-/*
-.team {
-    position: relative;
-    background-color: #F4F4F4;
-    padding: 40px 20px;
-    margin: 15px 0px;
-}
-
-.team::after {
-    content: "";
-    background-color: #1C1D21;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 0%;
-    z-index: 1;
-    -webkit-transition: 0.2s height;
-    transition: 0.2s height;
-}
-
-.team:hover:after {
-    height: 100%;
-}
-
-.team-img {
-    position: relative;
-    margin-bottom: 20px;
-    z-index: 11;
-}
-
-.team-img>img {
-  width: 100%;
-}
-
-.team .overlay {
-    background: #1C1D21;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    opacity: 0;
-    -webkit-transition: 0.2s opacity;
-    transition: 0.2s opacity;
-}
-
-.team:hover .overlay {
-    opacity: 0.8;
-}
-
-.team .team-content {
-    text-align: center;
-    position: relative;
-    z-index: 11;
-}
-
-.team .team-content h3 {
-    margin-bottom: 10px;
-    -webkit-transition: 0.2s color;
-    transition: 0.2s color;
-}
-
-.team .team-content span {
-    font-size: 14px;
-    text-transform: uppercase;
-    -webkit-transition: 0.2s color;
-    transition: 0.2s color;
-}
-
-.team:hover .team-content h3 {
-    color: #FFF;
-}
-
-.team:hover .team-content span {
-    color: #6195FF;
-}
-
-.team .team-social {
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: 0;
-    -webkit-transition: 0.2s opacity;
-    transition: 0.2s opacity;
-}
-
-.team .team-social a {
-    display: block;
-    line-height: 50px;
-    width: 50px;
-    text-align: center;
-    background-color: #6195FF;
-    color: #FFF;
-}
-
-.team:hover .team-social {
-    opacity: 1;
-}
-*/
 
 /*------------------------------------*\
 	Blog
@@ -1569,6 +1500,7 @@ header {
 
 .footer-logo>a>img {
     max-height: 80px;
+    border-radius: 30%
 }
 
 .footer-follow {

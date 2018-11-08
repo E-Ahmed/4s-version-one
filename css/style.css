@@ -880,6 +880,8 @@ header {
 
 .testimonial {
     margin: 15px 0px;
+    width: 20%;
+
 }
 
 .testimonial-meta {
@@ -896,7 +898,7 @@ header {
     top: 0;
     width: 100px !important;
     height: 100px !important;
-    border-radius: 30%;
+    border-radius: ;
 }
 
 .testimonial h3 {

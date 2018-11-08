@@ -79,13 +79,13 @@
 		margin:15,
 		dots : false,
 		nav: false,
-		autoplay : true,
+		autoplay : false,
 		responsive:{
 			0: {
 				items:1
 			},
 			992:{
-				items:5
+				items:7
 			}
 		}
 	});

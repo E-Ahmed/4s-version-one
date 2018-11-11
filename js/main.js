@@ -74,21 +74,6 @@
 		animateOut: 'fadeOut'
 	});
 
-	$('#testimonial-slider').owlCarousel({
-		loop:true,
-		margin:15,
-		dots : false,
-		nav: false,
-		autoplay : false,
-		responsive:{
-			0: {
-				items:1
-			},
-			992:{
-				items:7
-			}
-		}
-	});
 	$.fn.countTo = function (options) {
 	options = options || {};
 

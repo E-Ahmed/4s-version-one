@@ -903,37 +903,12 @@ header {
 /*------------------------------------*\
 	client
 \*------------------------------------*/
-
-.testimonial {
-  margin: 15px 0px;
-  width: 20%;
+.customer-logos {
+  display: flex;
+  flex-direction: row;
 }
 
-.testimonial-meta {
-  padding-left: 90px;
-  height: 70px;
-  margin-bottom: 20px;
-  padding-top: 10px;
-}
 
-.testimonial img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100px !important;
-  height: 100px !important;
-  border-radius: ;
-}
-
-.testimonial h3 {
-  margin-bottom: 5px;
-}
-
-.testimonial span {
-  font-size: 14px;
-  color: #6195FF;
-  text-transform: uppercase;
-}
 
 
 /*------------------------------------*\
@@ -1646,6 +1621,12 @@ input,textarea {
     float: none;
     text-align: center;
   }
+
+  .customer-logos {
+    display: flex;
+  }
+
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -1695,6 +1676,8 @@ input,textarea {
   .blog-comments .media .media {
     margin: 0px -15px;
   }
+
+
 }
 
 

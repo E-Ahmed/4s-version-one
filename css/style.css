@@ -905,14 +905,17 @@ header {
 \*------------------------------------*/
 .customer-logos {
   display: flex;
-  flex-direction: row;
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
 }
 
 
 
 
 /*------------------------------------*\
-	Blog
+	News
 \*------------------------------------*/
 
 .blog {
@@ -1224,12 +1227,9 @@ header {
   margin-right: 5px;
 }
 
-/***
-====================================================================
-  Global Settings
-====================================================================
-
- ***/
+/*------------------------------------*\
+	Global Setting
+\*------------------------------------*/
 
 @font-face {
   font-family: 'font-awesome';
@@ -1266,47 +1266,6 @@ input,textarea {
   clear: both;
 }
 
-.tran3s,.theme-main-menu .navbar-nav>li a,#project-section .project-gallery .single-img .opacity,
-#team-section .team-member-wrapper .single-team-member .member-name h6,
-#team-section .team-member-wrapper .single-team-member .member-name p,
-#team-section .team-member-wrapper .single-team-member .member-name ul,
-#our-client .owl-theme .owl-dots .owl-dot span {
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-.tran4s,#service-section .single-service-content p,#project-section .project-gallery .single-img .opacity ul,
-#project-section .project-gallery .single-img .opacity h6 a {
-  -webkit-transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
-  -ms-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-}
-
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
-}
-
-.round-border {
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-}
-
-.theme-title {
-  text-align: center;
-  margin: 95px 0 0 0;
-}
 
 .theme-title h2 {
   position: relative;
@@ -1329,11 +1288,7 @@ input,textarea {
 }
 
 .p-color,.theme-main-menu .navbar-nav>li.active>a,
-.theme-main-menu .navbar-nav>li>a:hover,#about-us .single-about-content:hover h5 a,
-#service-section .single-service-content:hover .icon-heading .icon,
-#service-section .single-service-content:hover .icon-heading h6 a,
-#pricing-section .single-price-table a:hover,#blog-section .single-news-item .img a,
-#blog-section .single-news-item:hover .post p a,#blog-section .single-news-item .post h6:hover a,
+.theme-main-menu .navbar-nav>li>a:hover,
 #contact .contact-address-content .left-side ul li:hover .icon,
 #contact .send-message form button:hover,.inner-page-banner .opacity ul li:last-child,
 .blog-details-page aside .sidebar-news-list ul li a i,.monthly-header-title,
@@ -1347,18 +1302,12 @@ input,textarea {
   color: #6195ff;
 }
 
-.p-color-bg,.theme-title h2:before,#about-us .single-about-content:hover .icon,
-#skill-section .codeconSkillbar .skillBar,#our-client .owl-theme .owl-dots .owl-dot.active span,
-#our-client .owl-theme .owl-dots .owl-dot:hover span,
+.p-color-bg,.theme-title h2:before,
+.owl-dot.active span,
 .blog-details-post-wrapper .comment-area .single-comment .comment button:hover {
   background: #6195ff;
 }
 
-.banner .project-button,#about-us .icon,#about-us .single-about-content a.more,
-#service-section .single-service-content:hover,#project-section .project-menu ul li.active,
-#project-section .project-menu ul li:hover,.page-middle-banner .opacity a,
-#team-section .team-member-wrapper .single-team-member .img .opacity h4,#pricing-section .single-price-table a,
-#our-client .owl-theme .owl-dots .owl-dot.active span, #our-client .owl-theme .owl-dots .owl-dot:hover span,
 #contact .contact-address-content .left-side ul li .icon,#contact .send-message form button,
 .sidebar-tags ul li a:hover,.blog-details-post-wrapper .post-comment form button,
 .blog-details-post-wrapper .post-comment textarea:focus,.blog-details-post-wrapper .post-comment input:focus {
@@ -1367,14 +1316,9 @@ input,textarea {
 }
 
 
-
-/***
-
-====================================================================
-  Contact Section
-====================================================================
-
- ***/
+/*------------------------------------*\
+	Contact US
+\*------------------------------------*/
 #contact .contact-address-content h2 {
   margin: 95px 0 35px 0;
 }
@@ -1466,13 +1410,9 @@ input,textarea {
 #map {
   height: 100%;
 }
-/***
-
-====================================================================
-  Conatct Form Activation
-====================================================================
-
- ***/
+/*------------------------------------*\
+	Contact Form Activation
+\*------------------------------------*/
 .alert-wrapper {
   display: none;
   position: fixed;
@@ -1595,6 +1535,11 @@ input,textarea {
 
 
 @media only screen and (max-width: 991px) {
+  .customer-logos {
+    width: 50%;
+    display: block;
+}
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -1623,7 +1568,14 @@ input,textarea {
   }
 
   .customer-logos {
-    display: flex;
+    width: 50%;
+    display: block;
+}
+  .center{
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
   }
 
 
@@ -1676,6 +1628,17 @@ input,textarea {
   .blog-comments .media .media {
     margin: 0px -15px;
   }
+  .customer-logos {
+    width: 100%;
+    display: block;
+}
+  .center{
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+  }
+
 
 
 }

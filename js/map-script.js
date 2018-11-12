@@ -22,16 +22,13 @@ var infoWindow;
 // Initialze google maps
 function initMap() {
     // Declare the location in the center of the map
-   /* var cairo = {
-        lat: 30.044420,
-        lng: 31.235712
-    };*/
+
     // Constructor creates a new map
     map = new google.maps.Map(document.getElementById('map'), {
-        center: new google.maps.LatLng(30.044420, 31.235712),
-        zoom: 10,
-        mapTypeControl: false,
-        gestureHandling: 'greedy'
+        center: new google.maps.LatLng(30.0523003,31.193510800000002),
+        zoom: 8,
+        mapTypeControl: true,
+        gestureHandling: 'greedy',
     });
 
     infoWindow = new google.maps.InfoWindow();

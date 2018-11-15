@@ -706,10 +706,8 @@ header {
 \*------------------------------------*/
 
 .work {
-  position: relative;
-  padding: 20px;
-  width: 25%;
-  height: 7.5cm;
+    position: relative;
+    padding: 20px;
 }
 
 .work>img {
@@ -717,107 +715,106 @@ header {
 }
 
 .work .overlay {
-  height: 100%;
-  width: 100%;
-  background: #1C1D21;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  opacity: 0;
-  -webkit-transition: 0.2s opacity;
-  transition: 0.2s opacity;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
+    background: #1C1D21;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
 }
 
 .work:hover .overlay {
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-  opacity: 0.8;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    opacity: 0.8;
 }
 
 .work .work-content {
-  position: absolute;
-  left: 25px;
-  right: 25px;
-  top: 50%;
-  text-align: center;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    top: 50%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .work .work-content h3 {
-  -webkit-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  transform: translateY(100%);
-  opacity: 0;
-  color: #FFF;
-  margin-bottom: 10px;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    opacity: 0;
+    color: #FFF;
+    margin-bottom: 10px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
 }
 
 .work:hover .work-content h3 {
-  -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-  transform: translateY(0%);
-  opacity: 1;
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
 }
 
 .work .work-content span {
-  display: block;
-  text-transform: uppercase;
-  -webkit-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  transform: translateY(100%);
-  opacity: 0;
-  color: #6195FF;
-  margin-bottom: 5px;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
+    display: block;
+    text-transform: uppercase;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    opacity: 0;
+    color: #6195FF;
+    margin-bottom: 5px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
 }
 
 .work:hover .work-content span {
-  -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-  transform: translateY(0%);
-  opacity: 1;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
 }
 
 .work .work-link {
-  text-align: center;
-  margin-top: 20px;
-  opacity: 0;
-  -webkit-transition: 0.2s opacity;
-  transition: 0.2s opacity;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
 }
 
 .work .work-link a {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-color: #6195FF;
-  color: #FFF;
-  line-height: 50px;
-  text-align: center;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #6195FF;
+    color: #FFF;
+    line-height: 50px;
+    text-align: center;
 }
 
 .work:hover .work-link {
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-  opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    opacity: 1;
 }
+
 
 
 /*------------------------------------*\
@@ -916,6 +913,23 @@ header {
   width: 20%;
   margin-bottom: 16px;
   padding: 0 8px;
+}
+.more{
+  text-align: center;
+  font-size: 20px;
+
+}
+
+.more :visited {
+    text-decoration: none;
+}
+
+.more :hover {
+    text-decoration: underline;
+}
+
+.more :active {
+    text-decoration: underline;
 }
 
 /*------------------------------------*\

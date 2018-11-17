@@ -647,7 +647,8 @@ header {
 .breadcrumb>li+li:before {
   color: #868F9B;
 }
-/* #myvideo{
+
+ /* #myVideo{
   position: fixed;
    right: 0;
    bottom: 0;

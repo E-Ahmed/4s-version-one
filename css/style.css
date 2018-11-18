@@ -28,12 +28,13 @@ Table OF Contents
 13 > Blog
 14 > Blog post
 15 > Blog sidebar
-16 > Contact
-17 > Footer
-18 > Responsive
-19 > Owl theme
-20 > Back to top
-21 > Preloader
+16 > ERB product
+17 > Contact
+18 > Footer
+19 > Responsive
+20 > Owl theme
+21 > Back to top
+22 > Preloader
 
 ------------------------------------*/
 
@@ -1245,6 +1246,15 @@ header {
   color: #6195FF;
   margin-right: 5px;
 }
+/*-----------------------*\
+   ERB product
+\*-----------------------*/
+.img-responsive{
+  border-radius: %;
+
+
+
+}
 
 /*------------------------------------*\
 	Global Setting
@@ -1602,6 +1612,11 @@ input,textarea {
    margin-right: auto;
    width: 50%;
   }
+  .img-responsive{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 
 
 }
@@ -1662,6 +1677,11 @@ input,textarea {
    margin-left: auto;
    margin-right: auto;
    width: 50%;
+  }
+  .img-responsive{
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 
 

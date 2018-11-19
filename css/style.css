@@ -28,7 +28,7 @@ Table OF Contents
 13 > Blog
 14 > Blog post
 15 > Blog sidebar
-16 > ERB product
+16 > ERP product
 17 > Contact
 18 > Footer
 19 > Responsive
@@ -1247,14 +1247,8 @@ header {
   margin-right: 5px;
 }
 /*-----------------------*\
-   ERB product
+   ERP product
 \*-----------------------*/
-.img-responsive{
-  border-radius: %;
-
-
-
-}
 
 /*------------------------------------*\
 	Global Setting
@@ -1575,6 +1569,7 @@ input,textarea {
  width: 50%;
 }
 
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -1614,9 +1609,12 @@ input,textarea {
   }
   .img-responsive{
     display: block;
-    width: 100%;
-    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px
   }
+
 
 
 }
@@ -1680,8 +1678,10 @@ input,textarea {
   }
   .img-responsive{
     display: block;
-    width: 100%;
-    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px
   }
 
 
@@ -1874,4 +1874,7 @@ input,textarea {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
+}
+.responsive-Image{
+  width: 100%
 }

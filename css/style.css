@@ -114,6 +114,7 @@ a:hover, a:focus {
 }
 
 ul, ol {
+  list-style: none;
   margin: 0;
   padding: 0;
 
@@ -1269,6 +1270,7 @@ button {
   box-shadow: none;
   display: block;
   padding: 0;
+  border-radius: 5%
 }
 
 input,textarea {
@@ -1277,6 +1279,7 @@ input,textarea {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+
 }
 
 .clear-fix {

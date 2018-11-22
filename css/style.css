@@ -711,6 +711,7 @@ header {
 
 .work>img {
   width: 100%;
+  border-radius: 2%
 }
 
 .work .overlay {
@@ -812,6 +813,18 @@ header {
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s;
     opacity: 1;
+}
+#addForm {
+  display: none;
+}
+#addFormContainer:hover #addForm {
+  display: table;
+}
+#addFormContainer:hover  a {
+  display: none;
+}
+#addFormContainer a {
+  cursor: pointer;
 }
 
 

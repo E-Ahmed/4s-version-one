@@ -1297,16 +1297,23 @@ header {
 \*-----------------------*/
 .wraper{
   display: flex;
-}
-.wd{
-  width: 50%;
   text-align: center;
+
+
+
+}
+
+.wd{
+  text-align: center;
+  width:50%;
+  margin-top: 40px;
 
 }
 .btn{
   background-color: #1b78bb;
   color: white;
 }
+
 
 /*------------------------------------*\
 	Global Setting
@@ -1674,7 +1681,22 @@ input,textarea {
     margin-left: 10px;
     margin-right: 10px
   }
+  .wraper{
+    display: block;
+    text-align: center;
 
+  }
+
+  .wd{
+    text-align: center;
+    width:50%;
+    margin-top: 30px;
+
+  }
+  .btn{
+    background-color: #1b78bb;
+    color: white;
+  }
 
 
 }
@@ -1742,6 +1764,23 @@ input,textarea {
     height: auto;
     margin-left: 10px;
     margin-right: 10px
+  }
+  .wraper{
+    display: block;
+    text-align: center;
+
+
+  }
+
+  .wd{
+    text-align: center;
+    width:100%;
+    margin-top: 20px;
+
+  }
+  .btn{
+    background-color: #1b78bb;
+    color: white;
   }
 
 

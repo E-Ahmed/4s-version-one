@@ -1,16 +1,13 @@
 (function($) {
 
-	$("#btnclick").click(function() {
+	$("#btnclick, #btnclick1 , #btnclick2, #btnclick3, #btnclick4, #btnclick5").click(function() {
 			$("#divpopup").dialog({
-					title: "ERP Solutions",
-					width: 600,
-					height:250,
-					modal: true,
+				  title:"ERP Solutions",
+					width: 400,
+					height: 200,
+				  modal: true,
 					buttons: {
-							Close:
-							function() {
-									$(this).dialog('close');
-							}
+
 					}
 			});
 	});

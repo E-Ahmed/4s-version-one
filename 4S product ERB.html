@@ -12,6 +12,10 @@
     <!-- title logo-->
     <link rel="icon" type="image/ico" href="img/logo.png" />
 
+    <link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+
+
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -31,6 +35,7 @@
 
     <!-- Main style sheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 
 <body>
@@ -70,14 +75,20 @@
                     <li><a href="index.html#product">Products</a></li>
                     <li><a href="index.html#service">Services</a></li>
                     <li class="has-dropdown"><a href="#odoo">Odoo</a>
+                        <ul class="dropdown">
+                            <li><a href="odoo.html">About Odoo</a></li>
+                            <li><a href="odoo.html">why Choose Odoo?</a></li>
+                            <li><a href="odoo.html">Odoo services</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown"><a>Clients</a>
                       <ul class="dropdown">
-                      <li><a href="odoo.html">About Odoo</a></li>
-                      <li><a href="odoo.html">why Choose Odoo?</a></li>
-                      <li><a href="odoo.html">Odoo services</a></li>
+                      <li><a href="#client">clients</a></li>
+                      <li><a href="4s client.html#client">other</a></li>
+
                          </ul>
                             </li>
-                    <li><a href="index.html#client">Clients</a></li>
-                    <li><a href="index.html#news">News</a></li>
+                    <!-- <li><a href="index.html#news">News</a></li> -->
                     <li><a href="index.html#contact">Contact Us</a></li>
                 </ul>
                 <!-- /Main navigation -->
@@ -138,13 +149,17 @@
                     <div class="col-md-6">
                         <h5 style="color: #1b78bb;">Financial management</h5>
                         <p>This module manages your capital inflow and outflow. It covers standard Accounting & Finance transactions like expenditures, general ledger, balance sheet, bank reconciliation, tax management and payments. The module also generates financial reports for different departments and business units</p>
+                        <button type="button" id="btnclick"><a  style="background-color: #1b78bb; color: white;" data-fancybox="" class="btn info fancybox">More</a></button>
 
-                          <div id="addFormContainer">
-                            <a style="background-color: #1b78bb; color: white;" data-fancybox="" class="btn info fancybox">More</a>
-                          <button > <a href="pdf/atlassian-git-cheatsheet.pdf" id="addForm" style="background-color: #000080; color: white;" data-fancybox="" class="btn info fancybox">web</a></button>
-                            <br>
-                            <button > <a href="pdf/atlassian-git-cheatsheet.pdf" id="addForm" style="background-color: #FA8072; color: white;" data-fancybox="" class="btn info fancybox">Desktop</a></button>
+                    </div>
+                    <div id="divpopup" class="wraper" style="display:none">
 
+                        <div class="wd">
+                          <a href="pdf\atlassian-git-cheatsheet.pdf" type="button" style="background-color: #1b78bb; color: white;"  data-fancybox="" class="btn info fancybox">Web</a>
+                        </div>
+
+                        <div class="wd">
+                          <a href="pdf\atlassian-git-cheatsheet.pdf" type="button" style="background-color: #1b78bb; color: white;"  data-fancybox="" class="btn info fancybox">Desktop</a>
                         </div>
                     </div>
 
@@ -159,12 +174,17 @@
                     <div class="col-md-6">
                         <h5 style="color: #1b78bb;">Sales</h5>
                         <p>The module handles sales workflows like sales inquiries sales orders and sales invoices The more advanced ERP also features taxation rules and shipping tracker</p>
-                        <div id="addFormContainer">
-                            <a style="background-color: #1b78bb; color: white;" data-fancybox="" class="btn info fancybox">More</a>
-                          <button > <a href="pdf/atlassian-git-cheatsheet.pdf" id="addForm" style="background-color: #000080; color: white;" data-fancybox="" class="btn info fancybox">web</a></button>
-                            <br>
-                            <button > <a href="pdf/atlassian-git-cheatsheet.pdf" id="addForm" style="background-color: #FA8072; color: white;" data-fancybox="" class="btn info fancybox">Desktop</a></button>
+                        <button type="button" id="btnclick"><a  style="background-color: #1b78bb; color: white;" data-fancybox="" class="btn info fancybox">More</a></button>
 
+                    </div>
+                    <div id="divpopup" class="wraper" style="display:none">
+
+                        <div class="wd">
+                          <a type="button"  data-fancybox="" class="btn info fancybox">Web</a>
+                        </div>
+
+                        <div class="wd">
+                          <a type="button"  data-fancybox="" class="btn info fancybox">Desktop</a>
                         </div>
                     </div>
 
@@ -179,14 +199,18 @@
                     <div class="col-md-6">
                         <h5 style="color: #1b78bb;">Manufacturing</h5>
                         <p>This modules is sometimes referred to as Engineering or Production. It helps businesses make manufacturing more efficient in areas, such as, product planning, materials sourcing, daily production monitoring and product forecasting. Some of the key functionalities in this module are: Bill of Material, Master Production Schedule, Shop Floor Control and Sales & Distribution Plan. The module is tightly integrated with SCM and Inventory modules especially in areas like product planning and inventory contro</p>
-                        <div id="addFormContainer">
-                            <a style="background-color: #1b78bb; color: white;" data-fancybox="" class="btn info fancybox">More</a>
-                          <button > <a href="pdf/atlassian-git-cheatsheet.pdf" id="addForm" style="background-color: #000080; color: white;" data-fancybox="" class="btn info fancybox">web</a></button>
-                            <br>
-                            <button > <a href="pdf/atlassian-git-cheatsheet.pdf" id="addForm" style="background-color: #FA8072; color: white;" data-fancybox="" class="btn info fancybox">Desktop</a></button>
+                        <button type="button" id="btnclick"><a  style="background-color: #1b78bb; color: white;" data-fancybox="" class="btn info fancybox">More</a></button>
 
+                    </div>
+                    <div id="divpopup" class="wraper" style="display:none">
+
+                        <div class="wd">
+                          <a type="button"  data-fancybox="" class="btn info fancybox">Web</a>
                         </div>
 
+                        <div class="wd">
+                          <a type="button"  data-fancybox="" class="btn info fancybox">Desktop</a>
+                        </div>
                     </div>
 
                 </div>
@@ -200,12 +224,17 @@
                     <div class="col-md-6">
                         <h5 style="color: #1b78bb;">SCM</h5>
                         <p>This modules covers key aspects in your supply chain including purchase order management. It manages product flow from production to consumer and, occasionally, vice-versa for returns or recalls. A key feature of the SCM module is process automation, which streamlines your entire supply chain and makes it adaptive to sudden market shifts</p>
-                        <div id="addFormContainer">
-                            <a style="background-color: #1b78bb; color: white;" data-fancybox="" class="btn info fancybox">More</a>
-                          <button > <a href="pdf/atlassian-git-cheatsheet.pdf" id="addForm" style="background-color: #000080; color: white;" data-fancybox="" class="btn info fancybox">web</a></button>
-                            <br>
-                            <button > <a href="pdf/atlassian-git-cheatsheet.pdf" id="addForm" style="background-color: #FA8072; color: white;" data-fancybox="" class="btn info fancybox">Desktop</a></button>
+                        <button type="button" id="btnclick"><a  style="background-color: #1b78bb; color: white;" data-fancybox="" class="btn info fancybox">More</a></button>
 
+                    </div>
+                    <div id="divpopup" class="wraper" style="display:none">
+
+                        <div class="wd">
+                          <a type="button"  data-fancybox="" class="btn info fancybox">Web</a>
+                        </div>
+
+                        <div class="wd">
+                          <a type="button"  data-fancybox="" class="btn info fancybox">Desktop</a>
                         </div>
                     </div>
 
@@ -220,12 +249,17 @@
                     <div class="col-md-6">
                         <h5 style="color: #1b78bb;">Inventory</h5>
                         <p>Also called material management module, it helps you measure stock targets, standardize replenishments and other inventory goals. It uses product serial numbers to track and locate items in your organization. This module is closely integrated with the Purchase module</p>
-                        <div id="addFormContainer">
-                            <a style="background-color: #1b78bb; color: white;" data-fancybox="" class="btn info fancybox">More</a>
-                          <button > <a href="pdf/atlassian-git-cheatsheet.pdf" id="addForm" style="background-color: #000080; color: white;" data-fancybox="" class="btn info fancybox">web</a></button>
-                            <br>
-                            <button > <a href="pdf/atlassian-git-cheatsheet.pdf" id="addForm" style="background-color: #FA8072; color: white;" data-fancybox="" class="btn info fancybox">Desktop</a></button>
+                        <button type="button" id="btnclick"><a  style="background-color: #1b78bb; color: white;" data-fancybox="" class="btn info fancybox">More</a></button>
 
+                    </div>
+                    <div id="divpopup" class="wraper" style="display:none">
+
+                        <div class="wd">
+                          <a type="button"  data-fancybox="" class="btn info fancybox">Web</a>
+                        </div>
+
+                        <div class="wd">
+                          <a type="button"  data-fancybox="" class="btn info fancybox">Desktop</a>
                         </div>
                     </div>
 
@@ -235,23 +269,35 @@
 
                 <div class="row">
 
-                    <img class="img-responsive col-md-6" style="float:left ;" src="img/erp/purchasing.jpg" alt="">
+                    <img class="img-responsive col-md-6" style="float:left ;" src="img/erp/Purchasing.jpg" alt="">
 
                     <div class="col-md-6">
                         <h5 style="color: #1b78bb;">Purchasing</h5>
                         <p>This module manages the processes involved in materials procurement. These include: supplier listings; quotation requests and analysis; purchase orders; Good Receipt Notes; and stock updates. As such, it functions closely with SCM or Inventory modules</p>
-                        <div id="addFormContainer">
-                            <a style="background-color: #1b78bb; color: white;" data-fancybox="" class="btn info fancybox">More</a>
-                          <button > <a href="pdf/atlassian-git-cheatsheet.pdf" id="addForm" style="background-color: #000080; color: white;" data-fancybox="" class="btn info fancybox">web</a></button>
-                            <br>
-                            <button > <a href="pdf/atlassian-git-cheatsheet.pdf" id="addForm" style="background-color: #FA8072; color: white;" data-fancybox="" class="btn info fancybox">Desktop</a></button>
+                        <button type="button" id="btnclick"><a  style="background-color: #1b78bb; color: white;" data-fancybox="" class="btn info fancybox">More</a></button>
 
+                    </div>
+                    <div id="divpopup" class="wraper" style="display:none">
+
+                        <div class="wd">
+                          <a  type="button"  data-fancybox="" class="btn info fancybox">Web</a>
+                        </div>
+
+                        <div class="wd">
+                          <a type="button"  data-fancybox="" class="btn info fancybox">Desktop</a>
                         </div>
                     </div>
 
                 </div>
                 <br>
                 <br>
+
+
+
+
+
+
+
 
             </div>
 
@@ -437,6 +483,9 @@
     <!-- /Preloader -->
 
     <!-- jQuery Plugins -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/lib/knockout-3.2.0.js"></script>

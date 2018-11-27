@@ -1,7 +1,22 @@
 (function($) {
-	"use strict"
 
-	///////////////////////////
+	$("#btnclick").click(function() {
+			$("#divpopup").dialog({
+					title: "ERP Solutions",
+					width: 600,
+					height:250,
+					modal: true,
+					buttons: {
+							Close:
+							function() {
+									$(this).dialog('close');
+							}
+					}
+			});
+	});
+
+	"use strict"
+///////////////////////////
 	// Preloader
 	$(window).on('load', function() {
 		$("#preloader").delay(600).fadeOut();
@@ -152,6 +167,8 @@ $.fn.countTo.defaults = {
 function formatter(value, settings) {
 	return value.toFixed(settings.decimals);
 }
+
+
 
 })(jQuery);
 

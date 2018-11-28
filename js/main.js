@@ -1,16 +1,16 @@
 (function($) {
-
-	$("#btnclick, #btnclick1 , #btnclick2, #btnclick3, #btnclick4, #btnclick5").click(function() {
-			$("#divpopup").dialog({
-				  title:"ERP Solutions",
-					width: 400,
-					height: 200,
-				  modal: true,
-					buttons: {
-
-					}
-			});
-	});
+	//
+	// $("#btnclick, #btnclick1 , #btnclick2, #btnclick3, #btnclick4, #btnclick5").click(function() {
+	// 		$("#divpopup").dialog({
+	// 			  title:"ERP Solutions",
+	// 				width: 400,
+	// 				height: 200,
+	// 			  modal: true,
+	// 				buttons: {
+	//
+	// 				}
+	// 		});
+	// });
 
 	"use strict"
 ///////////////////////////
@@ -75,7 +75,7 @@
 
 	///////////////////////////
 	// Owl Carousel
-	$('#about-slider').owlCarousel({
+	$('#about-slider,#about-slider1').owlCarousel({
 		items:1,
 		loop:true,
 		margin:15,
@@ -83,7 +83,7 @@
 		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
 		dots : true,
 		autoplay : true,
-		animateOut: 'fadeOut'
+		animatein: 'fadein'
 	});
 	$('#testimonial-slider').owlCarousel({
 		loop:true,
@@ -183,6 +183,8 @@ function formatter(value, settings) {
 
 
 })(jQuery);
+
+//its for counter//
 
 jQuery(document).ready(function( $ ) {
         $('.counter').counterUp({

@@ -78,7 +78,7 @@ h5 {
 }
 /*make any S at 4a red*/
 .scolor{
-  color: red  
+  color: red
 }
 
 a {
@@ -623,6 +623,7 @@ header {
   text-align: center;
 }
 
+
 .home-content h1 {
   text-transform: uppercase;
 }
@@ -648,6 +649,18 @@ header {
 
 .breadcrumb>li+li:before {
   color: #868F9B;
+}
+.left{
+
+   margin-top: 100px;
+    width: 50%;
+   float: left;
+}
+.right{
+  margin-top: 70px;
+  width: 50%;
+  float:right;
+
 }
 
  /* #myVideo{

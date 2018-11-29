@@ -40,6 +40,13 @@ Table OF Contents
 \*------------------------------------*/
 
 /* -- typography -- */
+/* html{
+  background: no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+} */
 
 body {
   font-family: 'Varela Round', sans-serif;
@@ -80,6 +87,15 @@ h5 {
 .scolor{
   color: red
 }
+
+/*make odoo navbar is image*/
+/* .odoo-image{
+  width: 55px;
+  height: 45px;
+  vertical-align: middle;
+  align-items: center;
+
+} */
 
 a {
   color: #6195FF;
@@ -151,6 +167,8 @@ ul, ol {
 
 
 /* --  background image section  -- */
+
+
 
 .bg-img {
   position: absolute;
@@ -606,6 +624,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 header {
   position: relative;
+
 }
 
 #home {
@@ -651,15 +670,19 @@ header {
   color: #868F9B;
 }
 .left{
-
-   margin-top: 100px;
-    width: 50%;
+   width: 50%;
+   margin-top: 200px;
    float: left;
+
+
 }
 .right{
-  margin-top: 70px;
+
   width: 50%;
   float:right;
+  margin-top: 100px;
+
+
 
 }
 
@@ -1667,7 +1690,7 @@ input,textarea {
   }
 
   .home-content h1 {
-    font-size: 36px;
+    font-size: 30px;
   }
 
   .header-wrapper h2 {
@@ -1714,6 +1737,16 @@ input,textarea {
     background-color: #1b78bb;
     color: white;
   }
+  .left{
+      width: 100%;
+      display: block;
+
+  }
+  .right{
+
+    width: 100%;
+    display: block;
+}
 
 
 }
@@ -1798,6 +1831,22 @@ input,textarea {
   .btn{
     background-color: #1b78bb;
     color: white;
+  }
+  .left{
+
+
+      width: 100%;
+      display: block;
+
+  }
+  .right{
+
+    width: 100%;
+    display: block;
+
+
+
+
   }
 
 

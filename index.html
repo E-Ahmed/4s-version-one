@@ -32,6 +32,9 @@
     <!-- Main style sheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <!--animation -->
+    <link href="animate.css" rel="stylesheet" type="text/css"/>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -48,7 +51,7 @@
 -->
     <header id="home">
         <!-- Background Image -->
-        <div class="bg-img" style="background-image: url('./img/background1.jpg');">
+        <div class="bg-img bg" style="background-image: url('./img/background1.jpg'); animation-duration: 1s;">
             <div class="overlay"></div>
         </div>
         <!-- /Background Image -->
@@ -80,11 +83,11 @@
                     <li><a href="#about"></i>About</a></li>
                     <li><a href="#product">Products</a></li>
                     <li><a href="#service">Services</a></li>
-                    <li class="has-dropdown"><a href="#odoo">Odoo</a>
+                    <li class="has-dropdown"><a href="#odoo"><span style="color:#BA55D3;">O</span>doo</a>
 					           	<ul class="dropdown">
-							        <li><a href="odoo.html">About Odoo</a></li>
-                      <li><a href="odoo.html">why Choose Odoo?</a></li>
-                      <li><a href="odoo.html">Odoo services</a></li>
+							        <li><a href="odoo.html">About <span style="color:#77536d">O</span>doo</a></li>
+                      <li><a href="odoo.html">why Choose <span style="color:#77536d">O</span>odoo?</a></li>
+                      <li><a href="odoo.html"><span style="color:#77536d">O</span>doo services</a></li>
 						             </ul>
 					                  </li>
                             <li class="has-dropdown"><a>Clients</a>
@@ -113,55 +116,39 @@
                         <div class="home-content left">
                             <h1 class="white-text">4<span class="scolor">S</span> Technology</h1>
                             <h3 class="white-text"><span class="scolor">S</span>ystem <span class="scolor">S</span>pecialist for <span class="scolor">S</span>oftware <span class="scolor">S</span>olution</h3>
-                            <p class="white-text">4<span class="scolor">S</span> has been supplying the Middle East market with High quality, Customizable, and Integrated  business applications  for more than 17 years.
+                            <!-- <p class="white-text">4<span class="scolor">S</span> has been supplying the Middle East market with High quality, Customizable, and Integrated  business applications  for more than 17 years.
                             </p>
 
                             <button class="white-btn"><a href="readMore.html" target="_blank">ReadMore</a></button>
-                            <button class="main-btn">LogIn</button>
+                            <button class="main-btn">LogIn</button> -->
                         </div>
 
-                          <div class="home-content right">
 
-
-                              <div id="about-slider1" class="owl-carousel owl-theme">
-                                  <div><img class="img-responsive" src="./img/about1.jpg" alt="">
+                              <div id="about-slider1" class="owl-carousel owl-theme home-content right">
+                                  <div class="row"><img class="img-responsive" src="./img/header/about1.png" alt="">
                                     <h3 class="white-text">4S ERP Solutions</h3>
-                                    <p class="white-text">4S ERP can be fully integrated or customized to specific processes, A typical ERP system covers key business processes and consists of the following modules: Financial management, Sales Management, Manufacturing, Supply Chain Management (SCM), Inventory and Purchasing.</p>
+                                    <p class="white-text">4S ERP can be fully integrated or customized to specific processes, A typical ERP system covers key business processes</p>
 
                                   </div>
-                                  <div><img class="img-responsive" src="./img/about2.jpg" alt="">
+                                
+                                  <div class="row"><img class="img-responsive" src="./img/header/about3.png" alt="">
                                     <h3 class="white-text">4S ERP Solutions</h3>
-                                    <p class="white-text">4S ERP can be fully integrated or customized to specific processes, A typical ERP system covers key business processes and consists of the following modules: Financial management, Sales Management, Manufacturing, Supply Chain Management (SCM), Inventory and Purchasing.</p>
+                                    <p class="white-text">4S ERP can be fully integrated or customized to specific processes, A typical ERP system covers key business processes</p>
 
                                   </div>
-                                  <div><img class="img-responsive" src="./img/about3.jpg" alt="">
+                                  <div class="row"><img class="img-responsive" src="./img/header/about4.png" alt="">
                                     <h3 class="white-text">4S ERP Solutions</h3>
-                                    <p class="white-text">4S ERP can be fully integrated or customized to specific processes, A typical ERP system covers key business processes and consists of the following modules: Financial management, Sales Management, Manufacturing, Supply Chain Management (SCM), Inventory and Purchasing.</p>
-
-                                  </div>
-                                  <div><img class="img-responsive" src="./img/about1.jpg" alt="">
-                                    <h3 class="white-text">4S ERP Solutions</h3>
-                                    <p class="white-text">4S ERP can be fully integrated or customized to specific processes, A typical ERP system covers key business processes and consists of the following modules: Financial management, Sales Management, Manufacturing, Supply Chain Management (SCM), Inventory and Purchasing.</p>
+                                    <p class="white-text">4S ERP can be fully integrated or customized to specific processes, A typical ERP system covers key business processes</p>
 
                                   </div>
 
-                                  <div><img class="img-responsive" src="./img/about1.jpg" alt="">
-                                    <h3 class="white-text">4S ERP Solutions</h3>
-                                    <p class="white-text">4S ERP can be fully integrated or customized to specific processes, A typical ERP system covers key business processes and consists of the following modules: Financial management, Sales Management, Manufacturing, Supply Chain Management (SCM), Inventory and Purchasing.</p>
 
-                                  </div>
-
-                                  <div><img class="img-responsive" src="./img/about1.jpg" alt="">
-                                    <h3 class="white-text">4S ERP Solutions</h3>
-                                    <p class="white-text">4S ERP can be fully integrated or customized to specific processes, A typical ERP system covers key business processes and consists of the following modules: Financial management, Sales Management, Manufacturing, Supply Chain Management (SCM), Inventory and Purchasing.</p>
-
-                                  </div>
 
                           </div>
 
 
 
-                        </div>
+
                     </div>
                     <!-- /home content -->
 
@@ -544,6 +531,7 @@
                         <img class="img-responsive" src="./img/about3.jpg" alt="">
                         <img class="img-responsive" src="./img/about4.jpg" alt="">
                     </div>
+
                 </div>
                 <!-- /About slider -->
 

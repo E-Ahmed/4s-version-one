@@ -75,13 +75,21 @@
 
 	///////////////////////////
 	// Owl Carousel
-	$('#about-slider,#about-slider1').owlCarousel({
+	$('#about-slider').owlCarousel({
 		items:1,
 		loop:true,
 		margin:15,
 		nav: true,
 		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
 		dots : true,
+		autoplay : true,
+		animatein: 'fadein'
+	});
+	$('#about-slider1').owlCarousel({
+		items:1,
+		loop:true,
+		margin:15,
+    dots : true,
 		autoplay : true,
 		animatein: 'fadein'
 	});

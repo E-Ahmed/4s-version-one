@@ -85,14 +85,14 @@
 		autoplay : true,
 		animatein: 'fadein'
 	});
-	$('#about-slider1').owlCarousel({
-		items:1,
-		loop:true,
-		margin:15,
-    dots : true,
-		autoplay : true,
-		animatein: 'fadein'
-	});
+	// $('#about-slider1').owlCarousel({
+	// 	items:1,
+	// 	loop:true,
+	// 	margin:15,
+  //   dots : true,
+	// 	autoplay : true,
+	// 	animatein: 'fadein'
+	// });
 	$('#testimonial-slider').owlCarousel({
 		loop:true,
 		margin:15,

@@ -986,6 +986,7 @@
 }
  .p-color-bg,.theme-title h2:before, .owl-dot.active span, .blog-details-post-wrapper .comment-area .single-comment .comment button:hover {
      background: #6195ff;
+     color: white;
 }
  #contact .contact-address-content .left-side ul li .icon,#contact .send-message form button, .sidebar-tags ul li a:hover,.blog-details-post-wrapper .post-comment form button, .blog-details-post-wrapper .post-comment textarea:focus,.blog-details-post-wrapper .post-comment input:focus {
      border-color: #6195ff;

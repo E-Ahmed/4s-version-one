@@ -879,7 +879,7 @@ product Section
             <div class="send-message">
                 <h2>Send Message</h2>
 
-                <form action="inc/sendemail.php" class="form-validation" autocomplete="off" method="post">
+                <form  class="form-validation" autocomplete="off" method="POST" name="send_msg" id="send_msg" role="form">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <div class="single-input">
@@ -907,10 +907,15 @@ product Section
                     <!-- /.single-input -->
                     <textarea placeholder="Write Message" name="message"></textarea>
 
-                    <button class="tran3s p-color-bg" >Send Message</button>
-                </form>
 
-              
+                    <input type="submit" class="btn btn-default tran3s p-color-bg" name="submit" value="Send Message"></input>
+
+                       <div id="result">
+                          <!-- A fantastic notice will be placed here =D -->
+                          </div>
+                 </form>
+
+
                 <!-- End of .alert_wrapper -->
             </div>
             <!-- /.send-message -->
@@ -1007,6 +1012,27 @@ Footer Section
 
     <script type="text/javascript" src="js/map-script.js"></script>
     <script src="js/lib/knockout-3.2.0.js"></script>
+
+    <!--Send Message js -->
+    <script type="text/javascript">
+
+            $('#send_msg').submit(function(event) {
+                event.preventDefault();
+                $.ajax({
+                    type: 'POST',
+                    url: 'js/send_msg.php',
+                    data: $(this).serialize(),
+                    dataType: 'json',
+                    success: function (data) {
+                        console.log(data);
+                        $('#result').html(data.msg);
+                    },
+                    error: function (data) {
+                        console.log(data);
+                        $('#result').html(data.msg);
+                    }
+                });
+            });
 
 </body>
 

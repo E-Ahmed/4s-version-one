@@ -1,0 +1,8 @@
+# IntelliJ
+*.iml
+
+.idea
+
+css/owl.transitions.css
+img/portfolio/
+
